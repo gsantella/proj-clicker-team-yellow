@@ -1,0 +1,37 @@
+body
+{
+    color: lightblue;
+    background-image: url("./images/water.jpg");
+}
+
+#menu
+{
+    margin: auto;
+    height: 100%;
+    width: 70%;
+    background-color: darkblue;
+    opacity: 70%;
+}
+
+a:link
+{
+    color: white;
+}
+
+a:visited
+{
+    color: purple;
+}
+
+.seperator
+{
+    width: 95%;
+    height: 20%;
+}
+
+.spaced
+{
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
