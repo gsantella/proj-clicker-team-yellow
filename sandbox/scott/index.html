@@ -1,0 +1,94 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="./../assets/index.css">
+<title>Ocean Clicker</title>
+<body class="text-center">
+    <div id="menu">
+        <h1>Ocean Clicker</h1>
+        <ul class="nav nav-tabs nav-fill" id="tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="signUp-tab" data-toggle="tab" href="#signUp" role="tab" aria-controls="signUp" aria-selected="true">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="signIn-tab" data-toggle="tab" href="#signIn" role="tab" aria-controls="signIn" aria-selected="false">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="leaderboard-tab" data-toggle="tab" href="#leaderboard" role="tab" aria-controls="leaderboard" aria-selected="false">Leaderboard</a>
+            </li>
+          </ul>
+        <div class="tab-content" id="tabContent">
+            <div class="tab-pane fade show active" id="signUp" role="tabpanel" aria-labelledby="signUp-tab">
+                <form id="signup" @submit.prevent="sendForm">
+                        <!--email -->
+                    <h1>Sign Up</h1>
+                    <image src="./images/wave.png" class="seperator">
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <input type="email" class="form-control" class="input" name="email" v-model="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                    </div>
+            
+                    <!-- name -->
+                    <div class="field">
+                    <label class="label">Username</label>
+                    <input type="text" class="form-control" class="input" name="name" v-model="name" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+      
+                    <!-- submit button -->
+                    <div  class="field" class="input-group mb-3 spaced">
+                        <button type="submit" class="btn btn-info btn-block" type="submit" class="button is-danger">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="signIn" role="tabpanel" aria-labelledby="signIn-tab">
+                <form id="signup" @submit.prevent="sendForm">
+                    <!--email -->
+                <h1>Sign Up</h1>
+                <image src="./images/wave.png" class="seperator">
+                <div class="field">
+                    <label class="label">Email</label>
+                    <input type="email" class="form-control" class="input" name="email" v-model="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                </div>
+        
+                <!-- name -->
+                <div class="field">
+                <label class="label">Username</label>
+                <input type="text" class="form-control" class="input" name="name" v-model="name" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+  
+                <!-- submit button -->
+                <div  class="field" class="input-group mb-3 spaced">
+                    <button type="submit" class="btn btn-info btn-block" type="submit" class="button is-danger">Sign Up</button>
+                </div>
+            </form>
+        </div>
+            <div class="tab-pane fade" id="leaderboard" role="tabpanel" aria-labelledby="leaderboard-tab">
+                <h1>Leaderboard</h1>
+                <h3>Top 5 Clickers</h3>
+                USERNAME: <br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100</div>
+                </div>
+                USERNAME: <br>
+                <div class="progress">
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 94%">94</div>
+                </div>
+                USERNAME: <br>
+                <div class="progress">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85</div>
+                </div>
+                USERNAME: <br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%">62</div>
+                </div>
+                USERNAME: <br>
+                <div class="progress">
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">10</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./../assets/email.js"></script>
+</body>

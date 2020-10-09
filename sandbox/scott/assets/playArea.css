@@ -1,0 +1,47 @@
+body
+{
+    color: lightblue;
+    background-image: url("./../images/water.jpg");
+}
+img 
+{
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+#clickButton
+{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    height: 100%;
+}
+#left
+{
+    position: absolute;
+    left: 0%;
+    right: 75%;
+}
+#right
+{
+    position: absolute;
+    left: 75%;
+    right: 0%;
+}
+.ribbon
+{
+    height: 100%;
+    margin: auto;
+    width: 15%;
+    background-color: darkblue;
+    opacity: 50%;
+}
+#menu
+{
+    margin: auto;
+    height: 100%;
+    width: 15%;
+    background-color: darkblue;
+    opacity: 70%;
+}
