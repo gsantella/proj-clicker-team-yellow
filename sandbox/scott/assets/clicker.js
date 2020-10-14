@@ -8,8 +8,7 @@ const app = new Vue({
           this.count += 1;
         },
         sendCount: function(){
-            count
-        }
+          console.log({clicks: this.count});
         }
     }
 });
