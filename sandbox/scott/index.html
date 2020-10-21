@@ -23,7 +23,7 @@
                     <image src="./images/wave.png" class="seperator">
                     <div class="field">
                         <label class="label">Email</label>
-                        <input type="email" class="form-control" class="input" name="email" v-model="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                        <input type="email" id="signUpEmail" class="form-control" class="input" name="email" v-model="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
                     </div>
             
                     <!-- name -->
@@ -63,9 +63,9 @@
         <div class="tab-pane fade" id="leaderboard" role="tabpanel" aria-labelledby="leaderboard-tab">
             <h1>Leaderboard</h1>
             <h3>Top 5 Clickers</h3>
-                <ul id="app">
+                <ul id="app2">
                     <li v-for="leaderboard in leaderboards">
-                        {{ leaderboard.username }}
+                        {{ leaderboard.username }} - {{leaderboard.clicks}}
                     </li>
                 </ul>
         </div>
@@ -76,5 +76,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue"></script>
+    <script src="./../assets/email.js"></script>
     <script src="./../assets/leaderboard.js"></script>
 </body>

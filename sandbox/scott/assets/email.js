@@ -8,7 +8,8 @@ const app = new Vue({
   },
   methods:{
     sendForm: function() {
-      console.log({name: this.name, email: this.email});
+      document.getElementById('signUpEmail').value;
+      fetch('https://MailGunPractice.dlaff666.repl.co/sign_up?email=[email]&username=[username]')
     }
   }
 });

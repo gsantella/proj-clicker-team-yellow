@@ -1,5 +1,5 @@
-const app = new Vue({
-    el: '#app',
+const app2 = new Vue({
+    el: '#app2',
     data: {
       leaderboards: []
     },
